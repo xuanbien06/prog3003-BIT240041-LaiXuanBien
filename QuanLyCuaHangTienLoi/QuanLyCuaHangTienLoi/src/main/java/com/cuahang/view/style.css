@@ -1,0 +1,88 @@
+/* --- 1. MÀU NỀN VÀ FONT CHỮ CHUNG --- */
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-color: #f4f7f6; /* Màu nền xám nhạt cực sang */
+    -fx-font-size: 14px;
+}
+
+/* --- 2. LÀM ĐẸP Ô NHẬP LIỆU (TextField) --- */
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 12px;
+}
+
+/* Hiệu ứng khi click chuột vào ô nhập liệu sẽ sáng viền xanh */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2px;
+}
+
+/* --- 3. LÀM ĐẸP NÚT BẤM (Button) CHUNG --- */
+.button {
+    -fx-background-color: #2c3e50; /* Màu xám đen viền nút */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2); /* Đổ bóng nhẹ 3D */
+}
+
+/* Hiệu ứng khi di chuột qua nút (Hover) */
+.button:hover {
+    -fx-background-color: #34495e;
+}
+
+/* --- 4. NÚT ĐẶC BIỆT (Xanh lá và Đỏ) --- */
+/* Nút màu xanh (Dùng cho Thanh Toán, Thêm, Lưu...) */
+.btn-primary {
+    -fx-background-color: #27ae60;
+}
+.btn-primary:hover {
+    -fx-background-color: #2ecc71;
+}
+
+/* Nút màu đỏ (Dùng cho Xóa, Đăng Xuất...) */
+.btn-danger {
+    -fx-background-color: #e74c3c;
+}
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* --- 5. LÀM ĐẸP BẢNG DỮ LIỆU (TableView) --- */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ecf0f1;
+    -fx-border-radius: 5px;
+}
+
+/* Màu thanh tiêu đề của bảng (Đen xám ngầu) */
+.table-view .column-header-background {
+    -fx-background-color: #34495e;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 40px; /* Độ cao của thanh tiêu đề */
+}
+
+/* Chữ trên thanh tiêu đề bảng (Màu trắng) */
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Đổi màu xen kẽ các dòng trong bảng cho dễ nhìn */
+.table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+/* Màu dòng khi được click chọn (Sáng màu xanh) */
+.table-row-cell:selected {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}

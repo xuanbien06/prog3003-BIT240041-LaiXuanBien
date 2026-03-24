@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="796.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cuahang.view.LichSuGiaoDichController">
+   <children>
+      <TableView fx:id="tblHoaDon" layoutY="48.0" onMouseClicked="#xuLyChonHoaDon" prefHeight="350.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="colMaHD" prefWidth="75.0" text="Mã HĐ" />
+          <TableColumn fx:id="colNgayLap" prefWidth="200.0" text="Ngày Lập" />
+            <TableColumn fx:id="colTongTien" prefWidth="125.0" text="Tổng Tiền" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblChiTiet" layoutX="398.0" layoutY="48.0" prefHeight="350.0" prefWidth="398.0">
+         <columns>
+            <TableColumn fx:id="colTenSP" prefWidth="200.0" text="Tên SP" />
+            <TableColumn fx:id="colSoLuong" prefWidth="75.0" text="Số Lượng" />
+            <TableColumn fx:id="colDonGia" prefWidth="125.0" text="Đơn Giá" />
+         </columns>
+      </TableView>
+      <Label layoutX="168.0" layoutY="24.0" prefHeight="23.0" prefWidth="62.0" text="Hóa Đơn" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="24.0" prefHeight="23.0" prefWidth="118.0" text="Chi Tiết Hóa Đơn" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
